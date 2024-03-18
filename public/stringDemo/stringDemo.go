@@ -1,7 +1,7 @@
 /*
  * @Author: zcw
  * @Date: 2024-03-15 10:12:38
- * @LastEditTime: 2024-03-15 14:10:14
+ * @LastEditTime: 2024-03-15 14:37:50
  * @Description: In User Settings Edit
  * @FilePath: \studyDemo\stringDemo\stringDemo.go
  */
@@ -9,6 +9,7 @@ package stringdemo
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 	"unicode/utf8"
 )
@@ -77,4 +78,7 @@ func StringTest() {
 	builder.WriteRune('哈')
 	builder.WriteString("，WriteString写入")
 	fmt.Println("测试Builder写入：", builder.String())
+
+	atoi, _ := strconv.Atoi("10")
+	fmt.Println("Atoi：", atoi)
 }

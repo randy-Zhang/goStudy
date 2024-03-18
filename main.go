@@ -1,7 +1,7 @@
 /*
  * @Author: zcw
  * @Date: 2024-03-04 14:53:15
- * @LastEditTime: 2024-03-15 10:21:30
+ * @LastEditTime: 2024-03-15 14:38:29
  * @Description: In User Settings Edit
  * @FilePath: \studyDemo\main.go
  */
@@ -9,12 +9,18 @@ package main
 
 import (
 	"fmt"
-	stringdemo "studyDemo/stringDemo"
+	controldemo "studyDemo/public/controlDemo"
+	stringdemo "studyDemo/public/stringDemo"
+	timedemo "studyDemo/public/timeDemo"
 )
 
 func main() {
 
 	stringdemo.StringTest()
+
+	timedemo.TimeTest()
+
+	controldemo.ControlTest()
 
 	/*fmt.Println("go project")
 
